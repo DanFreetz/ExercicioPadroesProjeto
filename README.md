@@ -1,20 +1,20 @@
-# Desenvolvimento Java 21
-- Repositório base para uso em disciplinas de desenvolvimento de software
-- Configurado para desenvolvimento em Java21 
-- Pensado para ser usado como "Monorepo" para uma série de projetos de aula
-- As instruções a seguir referem-se ao uso deste repositório em conjunto com o CodeSpaces
+# Desafio sobre Padrões de Projeto
+O objetivo é resolver a maior quantidade de problemas usando padrões de projeto. Em todas as questões apresentar o código usando o padrão e um exemplo de uso. Verifique o arquivo README de cada questão para maiores detalhes.
 
-## Criação de Projetos Java Básicos
-O script "create-project.sh" cria um projeto Maven/Java básico para ser usado em disciplinas de algoritmos e programação
-- Para que o uso deste script seja possível é necessário que o mesmo tenha permissão de execução. Antes de usar o script pela primeira vez use o comando: `chmod +x create-project.sh`
-- Para criar um projeto usando o script use o comando: `./create-project.sh com.exemplo meu-projeto`
-- Para compilar e executar o projeto use as opções do VSCode
-
-## Criação de projetos usando Vaadin
-O script "create-vaadin-project.sh" cria um projeto Maven/Spring-Boot/Vaadin para ser usado em disciplinas de programação
-- Para que o uso deste script seja possível é necessário que o mesmo tenha permissão de execução. Antes de usar o script pela primeira vez use o comando: `chmod +x create-vaadin-project.sh`
-- Para criar um projeto usando o script use o comando: `./create-vaadin-project.sh com.exemplo meu-projeto`
-- Para compilar e executar o projeto use o comando: `mvn spring-boot:run`
-
-## Criação de projetos SpringBoot
-- Use o plugin de criação de projetos Spring-Boot do VSCode
+## Q1: Classe validadora de campos string usando Strategy
+Aplicar o padrão strategy a fim de permitir acrescentar outros validadores
+## Q2 Sistema de log simples usando Singleton
+Aplicar o padrão Singleton para permitir acessar o mecanismo de log de qualquer ponto do programa
+## Q3 Sistema de log com níveis usando Decorator
+Aplicar o padrão Decorator para permitir acrescentar diferentes informações no log.
+Sugestões: 
+- envolver a mensagem de log entre colchetes "[mensagem]"
+- colocar a mensagem de log em letras maiusculas
+- Acrecentar o string "NIVEL 1" na frente da mensagem de log
+- Acrescentar o string "NIVEL 2" na frente da mensagem de log
+## Q4: Sistema de notificação usando observer
+Aplicar o padrão observer de maneira a tornar mais simples o acrescimo de novos visualizadores e/ou a ativação/desativação deles.
+## Q5: Sistema de registro de vendas usando Composite
+Aplicar o padrão Composite de maneira que seja possível criar ofertas que correspondem a kits de produtos.
+## Q6: Dado capaz de armazenar a relação dos valores sorteados nas últimas jogadas
+Aplicar o padrão decorator sobre um dado simples.
