@@ -29,5 +29,5 @@ public interface VendasFachada {
      * Consulta a lista de produtos disponíveis para venda
      * @return a lista de produtos disponíveis para venda
      */
-    List<Produto> buscarProdutos();
+    List<Vendido> buscarProdutos();
 }

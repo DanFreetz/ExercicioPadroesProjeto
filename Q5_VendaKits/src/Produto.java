@@ -1,4 +1,4 @@
-public class Produto {
+public class Produto implements Vendido {
     private int id;
     private String nome;
     private double preco;
@@ -9,16 +9,10 @@ public class Produto {
         this.preco = preco;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public double getPreco() {
-        return preco;
-    }
-
+    @Override
+    public int getId() { return id; }
+    @Override
+    public String getNome() { return nome; }
+    @Override
+    public double getPreco() { return preco; }
 }

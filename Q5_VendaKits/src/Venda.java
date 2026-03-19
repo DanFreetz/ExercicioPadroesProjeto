@@ -28,9 +28,9 @@ public class Venda {
         return total;
     }
 
-    public void registrarVenda(Produto produto, int quantidade) {
-        ItemDeVenda item = new ItemDeVenda(produto, quantidade);
-        itens.add(item);
+    public void registrarVenda(Vendido item, int quantidade) {
+        ItemDeVenda novoItem = new ItemDeVenda(item, quantidade);
+        itens.add(novoItem);
     }
 
     public String emitirComprovante() {
